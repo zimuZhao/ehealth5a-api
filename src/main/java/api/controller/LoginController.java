@@ -53,6 +53,7 @@ public class LoginController {
             }
         } else {
             Cookie cookie = new Cookie("ZIMU", "testNginx");
+            cookie.setPath("/");
             response.addCookie(cookie);
             response.getWriter().print("First request: Cookie writing successful~");
         }
